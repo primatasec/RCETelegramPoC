@@ -12,3 +12,6 @@ Impacto
 Conclusão: as falhas demonstram que widgets maliciosos podem explorar problemas internos do QuickJS e comprometer a segurança do Telegram Desktop. A terceira falha ainda não demonstrou execução de código.
 
 Posso também transformar esse resumo em um relatório técnico curto, no estilo de divulgação de vulnerabilidade (Security Advisory).
+
+PoC created on 11/11/2026
+PATCHED 13/11/2026
